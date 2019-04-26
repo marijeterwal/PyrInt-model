@@ -55,7 +55,7 @@ sett.loopIi = [5,0]; % 0 is no loop, 1 = loop 5 = specialloop (see later);
 sett.loopIe = [5,0];
 sett.Istep = 0.1;
 
-sett.iIu = [1.0,1.0]; %uA/cm^2, average amplitude of applied current; if reg > 1 and length(iIu) == 1, this value is used for all regions, if reg ~= length(iIu) an error occurs
+sett.iIu = [0.95,0.95]; %uA/cm^2, average amplitude of applied current; if reg > 1 and length(iIu) == 1, this value is used for all regions, if reg ~= length(iIu) an error occurs
 sett.iIu_max = [4,5];
 
 sett.eIu = [1.5,1.5]; %uA/cm^2
@@ -165,9 +165,9 @@ sett.g_syn_ee = 0.0012 * sett.Msynee*sett.Ne;  %0.01;
 sett.g_syn_ei = 0.0010 * sett.Msynei*sett.Ne; %0.34; 
 
 sett.g_syn_ee_r = [[0.00, 0.00];
-                   [0.02, 0.00]];
+                   [0.00, 0.00]];
 sett.g_syn_ei_r = [[0.00, 0.00];
-                   [0.02, 0.00]];
+                   [0.00, 0.00]];
 sett.g_syn_ii_r = [[0.00, 0.00];
                    [0.00, 0.00]];
 sett.g_syn_ie_r = [[0.00, 0.00];
